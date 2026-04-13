@@ -1,43 +1,54 @@
-/* ===== GLOBAL ===== */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
+/* ===== BODY (HAMMASINI O‘RTAGA) ===== */
 body {
-  background: linear-gradient(135deg, #667eea, #764ba2);
   min-height: 100vh;
-  color: #fff;
-}
-
-/* ===== HEADER ===== */
-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 30px 10px;
-}
 
-header h1 {
-  font-size: 40px;
-  letter-spacing: 2px;
-  text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
 }
 
 /* ===== MAIN CONTAINER ===== */
 .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
+  max-width: 900px;
+  padding: 40px;
 }
 
-/* ===== CARD STYLE ===== */
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 22px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* ===== CARD (agar ishlatsang) ===== */
 .card {
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
+  padding: 25px;
+  margin: 20px 0;
   border-radius: 20px;
-  padding: 20px;
-  margin: 15px 0;
+  backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   transition: 0.3s;
 }
@@ -47,38 +58,31 @@ header h1 {
   background: rgba(255, 255, 255, 0.25);
 }
 
-/* ===== TEXT ===== */
-h2 {
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-p {
-  line-height: 1.6;
-  opacity: 0.9;
-}
-
 /* ===== BUTTON ===== */
 button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  background: linear-gradient(45deg, #ff6b6b, #f06595);
-  color: white;
+  margin-top: 20px;
+  padding: 15px 35px;
+  font-size: 18px;
   font-weight: bold;
+
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+
   transition: 0.3s;
 }
 
 button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* ===== LINK ===== */
 a {
-  color: #ffd369;
+  color: #ffe082;
   text-decoration: none;
 }
 
@@ -88,11 +92,19 @@ a:hover {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 28px;
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 18px;
   }
 
   .container {
-    padding: 10px;
+    padding: 20px;
   }
 }
