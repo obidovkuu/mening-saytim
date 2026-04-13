@@ -6,62 +6,56 @@
   font-family: Arial, sans-serif;
 }
 
-/* ===== BODY (HAMMASINI O‘RTAGA) ===== */
+/* ===== BODY ===== */
 body {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
 }
 
-/* ===== MAIN CONTAINER ===== */
-.container {
-  max-width: 900px;
-  padding: 40px;
-}
+/* ===== SHE’R CARD ===== */
+.sheer-card {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
 
-/* ===== HEADINGS ===== */
-h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
-  text-shadow: 0 5px 20px rgba(0,0,0,0.3);
-}
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
 
-h2 {
-  font-size: 35px;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 22px;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-/* ===== CARD (agar ishlatsang) ===== */
-.card {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 25px;
-  margin: 20px 0;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  text-align: center;
+
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.25);
+.sheer-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
-/* ===== BUTTON ===== */
+/* ===== TITLE ===== */
+.sheer-card h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ffd369;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== TEXT ===== */
+.sheer-card p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #eaf0ff;
+}
+
+/* ===== BUTTON (agar bo‘lsa) ===== */
 button {
   margin-top: 20px;
-  padding: 15px 35px;
+  padding: 15px 30px;
   font-size: 18px;
   font-weight: bold;
 
@@ -92,19 +86,16 @@ a:hover {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  .container {
+  .sheer-card {
+    margin: 30px 15px;
     padding: 20px;
+  }
+
+  .sheer-card h2 {
+    font-size: 30px;
+  }
+
+  .sheer-card p {
+    font-size: 18px;
   }
 }
